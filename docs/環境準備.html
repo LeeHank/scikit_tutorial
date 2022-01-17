@@ -4,22 +4,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>References | A Minimal Book Example</title>
+<title>環境準備 | A Minimal Book Example</title>
 <meta name="author" content="John Doe">
-<meta name="description" content="&lt;p&gt;This is a minimal example of using the bookdown package to write a book.
-The HTML output format for this example is bookdown::bs4_book,
-set in the _output.yml file.&lt;/p&gt;">
+<meta name="description" content="當初是用 renv 專案，再加上 renv::use_python() 來開啟 python 的 virtual environment。那開完後，他的虛擬環境是建立在這個路徑： renv/python/virtualenvs/renv-python-3.8.0。所以虛擬資料夾名稱叫 renv-python-3.8.0。這就像自己用 VSCode 開虛擬環境時，會寫 python -m...">
 <meta name="generator" content="bookdown 0.24 with bs4_book()">
-<meta property="og:title" content="References | A Minimal Book Example">
+<meta property="og:title" content="環境準備 | A Minimal Book Example">
 <meta property="og:type" content="book">
-<meta property="og:description" content="&lt;p&gt;This is a minimal example of using the bookdown package to write a book.
-The HTML output format for this example is bookdown::bs4_book,
-set in the _output.yml file.&lt;/p&gt;">
+<meta property="og:description" content="當初是用 renv 專案，再加上 renv::use_python() 來開啟 python 的 virtual environment。那開完後，他的虛擬環境是建立在這個路徑： renv/python/virtualenvs/renv-python-3.8.0。所以虛擬資料夾名稱叫 renv-python-3.8.0。這就像自己用 VSCode 開虛擬環境時，會寫 python -m...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="References | A Minimal Book Example">
-<meta name="twitter:description" content="&lt;p&gt;This is a minimal example of using the bookdown package to write a book.
-The HTML output format for this example is bookdown::bs4_book,
-set in the _output.yml file.&lt;/p&gt;">
+<meta name="twitter:title" content="環境準備 | A Minimal Book Example">
+<meta name="twitter:description" content="當初是用 renv 專案，再加上 renv::use_python() 來開啟 python 的 virtual environment。那開完後，他的虛擬環境是建立在這個路徑： renv/python/virtualenvs/renv-python-3.8.0。所以虛擬資料夾名稱叫 renv-python-3.8.0。這就像自己用 VSCode 開虛擬環境時，會寫 python -m...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.11/header-attrs.js"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.3.1/transition.js"></script><script src="libs/bs3compat-0.3.1/tabs.js"></script><script src="libs/bs3compat-0.3.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -46,14 +40,14 @@ set in the _output.yml file.&lt;/p&gt;">
       <nav aria-label="Table of contents"><h2>Table of contents</h2>
         <ul class="book-toc list-unstyled">
 <li><a class="" href="index.html">About</a></li>
-<li><a class="" href="%E7%92%B0%E5%A2%83%E6%BA%96%E5%82%99.html">環境準備</a></li>
+<li><a class="active" href="%E7%92%B0%E5%A2%83%E6%BA%96%E5%82%99.html">環境準備</a></li>
 <li><a class="" href="hello-bookdown.html"><span class="header-section-number">1</span> Hello bookdown</a></li>
 <li><a class="" href="cross.html"><span class="header-section-number">2</span> Cross-references</a></li>
 <li><a class="" href="parts.html"><span class="header-section-number">3</span> Parts</a></li>
 <li><a class="" href="footnotes-and-citations.html"><span class="header-section-number">4</span> Footnotes and citations</a></li>
 <li><a class="" href="blocks.html"><span class="header-section-number">5</span> Blocks</a></li>
 <li><a class="" href="sharing-your-book.html"><span class="header-section-number">6</span> Sharing your book</a></li>
-<li><a class="active" href="references.html">References</a></li>
+<li><a class="" href="references.html">References</a></li>
 <li><a class="" href="ch2-end-to-end-ml-project.html"><span class="header-section-number">7</span> CH2: End to end ml project</a></li>
 </ul>
 
@@ -62,22 +56,45 @@ set in the _output.yml file.&lt;/p&gt;">
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="references" class="section level1 unnumbered">
-<h1>References<a class="anchor" aria-label="anchor" href="#references"><i class="fas fa-link"></i></a>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="環境準備" class="section level1 unnumbered">
+<h1>環境準備<a class="anchor" aria-label="anchor" href="#%E7%92%B0%E5%A2%83%E6%BA%96%E5%82%99"><i class="fas fa-link"></i></a>
 </h1>
-
+<ul>
+<li>當初是用 renv 專案，再加上 <code><a href="https://rstudio.github.io/renv/reference/use_python.html">renv::use_python()</a></code> 來開啟 python 的 virtual environment。那開完後，他的虛擬環境是建立在這個路徑： <code>renv/python/virtualenvs/renv-python-3.8.0</code>。所以虛擬資料夾名稱叫 <code>renv-python-3.8.0</code>。這就像自己用 VSCode 開虛擬環境時，會寫 <code>python -m venv my_env</code>，那時的 my_env 就像現在的 renv-python-3.8.0。<br>
+</li>
+<li>如果用 RStudio 開啟此專案，那 python 的 virtual environment 會自動被 activate，所以就正常使用 python 是沒問題<br>
+</li>
+<li>但如果用 VSCode 開啟此專案，就需要手動做一些事：
+<ul>
+<li>打開 terminal，先 activate 虛擬環境： <code>source renv/python/virtualenvs/renv-python-3.8.0/bin/activate</code><br>
+</li>
+<li>第一次做的時候，為了讓 jupyter notebook 也可以吃到虛擬環境，所以要加做：
+<ul>
+<li>
+<code>pip install ipykernel</code><br>
+</li>
+<li><code>ipython kernel install --name=renv-python-3.8.0</code></li>
+</ul>
+</li>
+<li>之後就正常打開 jupyter notebook，然後 <code>ctrl+shift+p</code>，打 <code>python: select interpreter</code>，然後選到虛擬環境的 python 位置： <code>此專案根目錄/renv/virtualenvs/renv-python-3.8.0/bin/python</code>。這樣，這個 jupyter notebook 就會用虛擬環境的 python 和 package 來執行<br>
+</li>
+<li>如果要確認現在的 jupyter notebook 有沒有吃到虛擬環境，可以打 <code>! which python</code> (驚嘆號是讓 code chunk 可以執行 bash 指令)，那路徑應該要是剛剛寫的： <code>此專案根目錄/renv/virtualenvs/renv-python-3.8.0/bin/python</code>
+</li>
+</ul>
+</li>
+</ul>
 </div>
   <div class="chapter-nav">
-<div class="prev"><a href="sharing-your-book.html"><span class="header-section-number">6</span> Sharing your book</a></div>
-<div class="next"><a href="ch2-end-to-end-ml-project.html"><span class="header-section-number">7</span> CH2: End to end ml project</a></div>
+<div class="prev"><a href="index.html">About</a></div>
+<div class="next"><a href="hello-bookdown.html"><span class="header-section-number">1</span> Hello bookdown</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
-      <ul class="nav navbar-nav"><li><a class="nav-link" href="#references">References</a></li></ul>
+      <ul class="nav navbar-nav"><li><a class="nav-link" href="#%E7%92%B0%E5%A2%83%E6%BA%96%E5%82%99">環境準備</a></li></ul>
 
       <div class="book-extra">
         <ul class="list-unstyled">
-<li><a id="book-source" href="https://github.com/rstudio/bookdown-demo/blob/master/07-references.Rmd">View source <i class="fab fa-github"></i></a></li>
-          <li><a id="book-edit" href="https://github.com/rstudio/bookdown-demo/edit/master/07-references.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+<li><a id="book-source" href="https://github.com/rstudio/bookdown-demo/blob/master/index.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/rstudio/bookdown-demo/edit/master/index.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
         </ul>
 </div>
     </nav>

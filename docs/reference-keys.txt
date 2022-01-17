@@ -2,10 +2,6 @@ fig:nice-fig
 tab:nice-tab
 eq:binom
 thm:tri
-about
-usage
-render-book
-preview-book
 hello-bookdown
 a-section
 cross
@@ -23,3 +19,12 @@ sharing-your-book
 publishing
 pages
 metadata-for-sharing
+ch2-end-to-end-ml-project
+problem-formulation-the-big-picture
+取得資料盡量自動化
+eda
+資料前處理
+model-screening
+fine-tune-model
+presentation
+deploy
